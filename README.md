@@ -36,7 +36,9 @@ open /Applications/Darktop.app
 
 To start it at login, add it under System Settings › General › Login Items.
 
-`swift test` runs the unit tests. Each push also builds a universal app on GitHub Actions and attaches `Darktop.zip` to the run. That build is ad-hoc signed and not notarized, so macOS will block it after download until you allow it under System Settings › Privacy & Security.
+`swift test` runs the unit tests. `UNIVERSAL=1 scripts/build-app.sh` builds for both Apple Silicon and Intel (needs full Xcode).
+
+The app is ad-hoc signed and not notarized. That is fine on the Mac that built it, but if you send it to another Mac, macOS will block it until you allow it under System Settings › Privacy & Security.
 
 ## How it works
 

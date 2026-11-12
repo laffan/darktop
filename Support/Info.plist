@@ -8,6 +8,8 @@
 	<string>Darktop</string>
 	<key>CFBundleExecutable</key>
 	<string>Darktop</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
 	<string>io.github.laffan.darktop</string>
 	<key>CFBundleInfoDictionaryVersion</key>
